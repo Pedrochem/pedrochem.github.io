@@ -1,13 +1,44 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+body, html {
+    height: 100%;
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #1a1a1a;
+}
+
+.container {
+    display: flex;
+    min-height: 100%;
+}
+
+aside {
+    flex: 1;
+    background-color: #333;
+    padding: 20px;
+}
+
+main {
+    flex: 3;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-header, nav, main, footer {
-    padding: 1em;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-/* Add more styling as needed */
+/* Additional styling for h1, p, sections, and footer */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside, main {
+        flex: none;
+    }
+}
