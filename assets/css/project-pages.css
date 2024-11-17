@@ -1,0 +1,40 @@
+/* Project page specific styles */
+.project-content {
+    margin-top: 2em;
+}
+
+.project-content .image.main {
+    margin-bottom: 2em;
+}
+
+.project-content h3 {
+    margin-top: 2em;
+    color: #49bf9d;
+}
+
+.project-content ul {
+    list-style: disc;
+    margin-left: 2em;
+}
+
+.project-content ul.actions {
+    list-style: none;
+    margin-left: 0;
+}
+
+.project-content .button {
+    margin-right: 1em;
+}
+
+/* Back to Portfolio link hover effect */
+#header h1 a:hover {
+    color: #49bf9d;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 736px) {
+    .project-content .button {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+} 
